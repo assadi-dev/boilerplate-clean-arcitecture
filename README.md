@@ -9,7 +9,21 @@ Install dependencies
 npm install
 ```
 
+Create .env file with thes properties:
+```sh
+# common
+NODE_ENV=develoment
+PORT=8000
+LOG_LEVEL=info
 
+# mysql
+MYSQL_HOST=""
+MYSQL_USER=""
+MYSQL_PASSWORD=""
+MYSQL_DATABASE=""
+MYSQL_PORT=3306
+
+```
 
 You can run the project locally with:
 
