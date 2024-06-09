@@ -9,7 +9,7 @@ Install dependencies
 npm install
 ```
 
-Create .env file with thes properties:
+Create .env file in root folder project with theses properties:
 ```sh
 # common
 NODE_ENV=develoment
