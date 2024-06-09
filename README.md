@@ -2,14 +2,21 @@
 
 ## Quick start
 
-As the project uses Yarn zero-install, there is no need to install the
-dependencies.
+As the project uses npm 
+
+Install dependencies
+```sh
+npm install
+```
+
+
 
 You can run the project locally with:
 
 ```sh
-$ npm run dev
+ npm run dev
 ```
+**Api Doc** => [http://localhost:8000](http://localhost:8000/api-doc)
 
 ## Database migrations
 
@@ -19,7 +26,6 @@ migration, you can do so by issuing the following command:
 
 ### Generate migration with npm 
 ```sh
-
 npm run typeorm migration:generate -- --d "src\infrastructure\adapters\type-orm\data-source.ts"   "src\infrastructure\adapters\type-orm\migrations\migration-name"
 
 ```
