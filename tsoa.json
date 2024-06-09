@@ -1,0 +1,23 @@
+{
+    "entryFile": "src/index.ts",
+    "noImplicitAdditionalProperties": "throw-on-extras",
+    "controllerPathGlobs": [
+        "src/**/*.controller.ts"
+    ],
+    "spec": {
+        "outputDirectory": "build",
+        "specVersion": 3,
+        "spec": {
+            "servers": [
+                {
+                    "url": "http://localhost:8000/api/v1",
+                    "description": "Localhost"
+                }
+            ]
+        }
+    },
+    "routes": {
+        "basePath": "/api/v1",
+        "routesDir": "build"
+    }
+}
