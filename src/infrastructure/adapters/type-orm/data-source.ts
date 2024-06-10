@@ -2,7 +2,6 @@ import { z } from "zod"
 import nodeTypeSafeConfig from "./typeOrm.config"
 import { DataSource } from "typeorm"
 import { SnakeNamingStrategy } from "typeorm-naming-strategies"
-import Book from "./book/book.entity"
 
 const ConfigSchema = z.object({
     host: z.string().min(1),
@@ -27,7 +26,6 @@ export const AppDataSource = new DataSource({
     //logging:true,
     namingStrategy: new SnakeNamingStrategy(),
     migrations: ["src/infrastructure/adapters/type-orm/migrations/**/*.ts"],
-    migrationsTableName: "custom_migration_table",
     migrationsRun: true,
     extra: {
         charset: 'utf8mb4_unicode_ci',
